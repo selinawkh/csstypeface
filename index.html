@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div id="header-container">
+        <div class="title">Semiotica</div>
+        <div class="description">Semiotica is an interactive modular typeface built for playful semiotics. By toggling the modules at different angles, one finds themselves wander in a maze of recognizability and unfamiliarity that form and break letterforms. By dragging the
+            circular knobs, one can also stack and connect the groups of shapes that form new symbols. Eventually, the page becomes a digital tapestry of patterns that once make up letterforms. </div>
+        <div class="credits">This typeface is designed by Selina Kehuan Wu in Interaction Capstone, Fall 2021. Title set in FK Raster Grotesk by Florian Karsten; body text set in Lausanne by Weltkern Type Foundry. Huge thanks to my instructor Jonathan Hanahan for constant
+            guidance, and my hardworking peers (esp. Leslie) for the invaluable feedbacks and discussions.</div>
+        <div class="divider"></div>
+    </div>
+
+    <!-- content container -->
+    <div class="container">
+        <!-- letter container -->
+        <!-- upper/lower left right = ul ll ur lr-->
+        <!-- A -->
+        <div class="letter-container a " id="letter-a">
+            <div class="circle knob" id="circle-a"></div>
+            <div class="line line-left"></div>
+            <img src="image/sector-ul.svg" class="ring ul">
+            <img src="image/sector-ur.svg" class="ring ur">
+            <div class="line line-right"></div>
+        </div>
+        <!-- B -->
+        <div class="letter-container b " id="letter-b">
+            <div class="line line-vertical-1"></div>
+            <div class="circle knob"></div>
+            <div class="line line-vertical-2"></div>
+            <div class="line line-horizontal line-horizontal-1"></div>
+            <div class="line line-horizontal line-horizontal-2"></div>
+            <div class="line line-horizontal line-horizontal-3"></div>
+            <img src="image/sector-ur.svg" class="ring ur" id="b-ring-ur-1">
+            <img src="image/sector-lr.svg" class="ring lr" id="b-ring-lr-1">
+            <img src="image/sector-ur.svg" class="ring ur" id="b-ring-ur-2">
+            <img src="image/sector-lr.svg" class="ring lr" id="b-ring-lr-2">
+        </div>
+
+        <!-- C -->
+        <div class="letter-container c" id="letter-c">
+            <img src="image/sector-ul.svg" class="ring lr" id="c-ring-ul-1">
+            <img src="image/sector-ul.svg" class="ring lr" id="c-ring-ul-2">
+            <div class="line line-horizontal line-horizontal-1"></div>
+            <div class="line line-vertical-1"></div>
+            <img src="image/sector-ll.svg" class="ring ll" id="c-ring-ll">
+            <div class="line line-horizontal line-horizontal-2"></div>
+            <div class="circle knob"></div>
+        </div>
+        <!-- D -->
+        <div class="letter-container d" id="letter-d">
+            <div class="line line-vertical-1"></div>
+            <div class="circle knob"></div>
+            <div class="line line-vertical-2"></div>
+            <div class="line line-vertical-3"></div>
+            <div class="line line-horizontal line-horizontal-1"></div>
+            <div class="line line-horizontal line-horizontal-2"></div>
+            <img src="image/sector-ur.svg" class="ring ur" id="d-ring-ur">
+            <img src="image/sector-lr.svg" class="ring lr" id="d-ring-lr">
+        </div>
+        <!-- E -->
+        <div class="letter-container e" id="letter-e">
+            <div class="line line-vertical-1"></div>
+            <div class="circle knob"></div>
+            <div class="line line-vertical-2"></div>
+            <div class="line line-horizontal line-horizontal-1"></div>
+            <img src="image/sector-ur.svg" class="ring ur" id="e-ring-ur">
+            <div class="line line-horizontal line-horizontal-2"></div>
+            <div class="line line-horizontal line-horizontal-3"></div>
+            <img src="image/sector-lr.svg" class="ring lr" id="e-ring-lr">
+        </div>
+        <!-- F -->
+        <div class="letter-container f" id="letter-f">
+            <div class="line line-vertical-1"></div>
+            <div class="circle knob"></div>
+            <div class="line line-vertical-2"></div>
+            <div class="line line-horizontal line-horizontal-1"></div>
+            <img src="image/sector-ur.svg" class="ring ur" id="f-ring-ur">
+            <div class="line line-horizontal line-horizontal-2"></div>
+        </div>
+        <!-- G -->
+        <div class="letter-container g" id="letter-g">
+            <img src="image/sector-ul.svg" class="ring lr" id="g-ring-ul-1">
+            <img src="image/sector-ul.svg" class="ring lr" id="g-ring-ul-2">
+            <div class="line line-horizontal line-horizontal-1"></div>
+            <div class="line line-vertical-1"></div>
+            <img src="image/sector-ll.svg" class="ring ll" id="g-ring-ll">
+            <div class="line line-horizontal line-horizontal-2"></div>
+            <img src="image/sector-ur.svg" class="ring ur" id="d-ring-ur">
+            <div class="circle knob"></div>
+        </div>
+        <!-- H -->
+        <div class="letter-container h" id="letter-h">
+            <div class="line line-vertical-1"></div>
+            <div class="line line-vertical-2"></div>
+            <div class="circle circle-1 knob"></div>
+            <div class="line line-vertical-3"></div>
+            <div class="line line-vertical-4"></div>
+            <div class="circle circle-2 knob"></div>
+            <img src="image/sector-lr.svg" class="ring lr" id="h-ring-lr">
+            <img src="image/sector-ul.svg" class="ring ul" id="h-ring-ul">
+        </div>
+        <!-- I -->
+        <div class="letter-container i" id="letter-i">
+            <div class="line line-vertical-1"></div>
+            <div class="circle"></div>
+            <div class="line line-vertical-2"></div>
+        </div>
+        <!-- J -->
+        <div class="letter-container j" id="letter-j">
+            <div class="circle circle-1 knob"></div>
+            <div class="line line-vertical-1"></div>
+            <div class="circle circle-2 knob"></div>
+            <img src="image/sector-lr.svg" class="ring lr" id="j-ring-lr">
+            <div class="line line-horizontal line-horizontal-1"></div>
+            <img src="image/sector-ll.svg" class="ring ll" id="j-ring-ll">
+        </div>
+        <!-- K -->
+        <div class="letter-container k" id="letter-k">
+            <div class="line line-vertical-1"></div>
+            <div class="circle knob"></div>
+            <div class="line line-vertical-2"></div>
+            <img src="image/sector-lr.svg" class="ring lr" id="k-ring-lr-1">
+            <img src="image/sector-ul.svg" class="ring ul" id="k-ring-ul">
+            <img src="image/sector-lr.svg" class="ring lr" id="k-ring-lr-2">
+            <img src="image/sector-ur.svg" class="ring ur" id="k-ring-ur-1">
+            <img src="image/sector-ll.svg" class="ring ll" id="k-ring-ll">
+            <img src="image/sector-ur.svg" class="ring ur" id="k-ring-ur-2">
+        </div>
+        <!-- L -->
+        <div class="letter-container l" id="letter-l">
+            <div class="line line-vertical-2"></div>
+            <div class="circle knob"></div>
+            <img src="image/sector-ll.svg" class="ring ll" id="l-ring-ll">
+            <div class="line line-horizontal line-horizontal-1"></div>
+            <img src="image/sector-lr.svg" class="ring lr" id="l-ring-lr">
+        </div>
+        <!-- M -->
+        <div class="letter-container m" id="letter-m">
+            <div class="line line-vertical-1"></div>
+            <div class="circle circle-1 knob"></div>
+            <div class="line line-vertical-2"></div>
+            <div class="circle circle-2 knob"></div>
+            <img src="image/sector-ur.svg" class="ring ur" id="m-ring-ur">
+            <img src="image/sector-ll.svg" class="ring ll" id="m-ring-ll">
+            <img src="image/sector-lr.svg" class="ring lr" id="m-ring-lr">
+            <img src="image/sector-ul.svg" class="ring ul" id="m-ring-ul">
+        </div>
+        <!-- N -->
+        <div class="letter-container n" id="letter-n">
+            <div class="circle circle-1 knob"></div>
+            <div class="line line-vertical-1"></div>
+            <div class="line line-vertical-2"></div>
+            <div class="circle circle-2 knob"></div>
+            <img src="image/sector-ll.svg" class="ring ll" id="n-ring-ll">
+            <img src="image/sector-ur.svg" class="ring ur" id="n-ring-ur">
+        </div>
+        <!-- O -->
+        <div class="letter-container o" id="letter-o">
+            <img src="image/sector-ul.svg" class="ring lr" id="o-ring-ul">
+            <img src="image/sector-ll.svg" class="ring ll" id="o-ring-ll">
+            <img src="image/sector-lr.svg" class="ring lr" id="o-ring-lr">
+            <img src="image/sector-ur.svg" class="ring ur" id="o-ring-ur">
+            <div class="line line-vertical-1"></div>
+            <div class="line line-vertical-2"></div>
+            <div class="line line-horizontal line-horizontal-1"></div>
+            <div class="line line-horizontal line-horizontal-2"></div>
+            <div class="circle knob"></div>
+        </div>
+        <!-- P -->
+        <div class="letter-container p " id="letter-p">
+            <div class="line line-vertical-1"></div>
+            <div class="circle knob"></div>
+            <div class="line line-vertical-2"></div>
+            <div class="line line-horizontal line-horizontal-1"></div>
+            <div class="line line-horizontal line-horizontal-2"></div>
+            <img src="image/sector-ur.svg" class="ring ur" id="p-ring-ur">
+            <img src="image/sector-lr.svg" class="ring lr" id="p-ring-lr">
+        </div>
+        <!-- Q -->
+        <div class="letter-container q" id="letter-q">
+            <img src="image/sector-ul.svg" class="ring lr" id="q-ring-ul">
+            <img src="image/sector-ll.svg" class="ring ll" id="q-ring-ll">
+            <img src="image/sector-ur.svg" class="ring ur" id="q-ring-ur-1">
+            <img src="image/sector-ur.svg" class="ring ur" id="q-ring-ur-2">
+            <div class="line line-vertical-1"></div>
+            <div class="line line-vertical-2"></div>
+            <div class="line line-horizontal line-horizontal-1"></div>
+            <div class="line line-horizontal line-horizontal-2"></div>
+            <div class="circle knob"></div>
+        </div>
+        <!-- R -->
+        <div class="letter-container r " id="letter-r">
+            <div class="line line-vertical-1"></div>
+            <div class="circle knob"></div>
+            <div class="line line-vertical-2"></div>
+            <div class="line line-horizontal line-horizontal-1"></div>
+            <div class="line line-horizontal line-horizontal-2"></div>
+            <img src="image/sector-ur.svg" class="ring ur" id="r-ring-ur-1">
+            <img src="image/sector-lr.svg" class="ring lr" id="r-ring-lr">
+            <img src="image/sector-ur.svg" class="ring ur" id="r-ring-ur-2">
+            <img src="image/sector-ur.svg" class="ring ur" id="r-ring-ur-3">
+            <img src="image/sector-ll.svg" class="ring ll" id="r-ring-ll">
+        </div>
+        <!-- S -->
+        <div class="letter-container s" id="letter-s">
+            <img src="image/sector-ul.svg" class="ring lr" id="s-ring-ul">
+            <img src="image/sector-ur.svg" class="ring ur" id="s-ring-ur-1">
+            <img src="image/sector-ur.svg" class="ring ur" id="s-ring-ur-2">
+            <img src="image/sector-ll.svg" class="ring ll" id="s-ring-ll-1">
+            <img src="image/sector-ll.svg" class="ring ll" id="s-ring-ll-2">
+            <img src="image/sector-lr.svg" class="ring lr" id="s-ring-lr">
+            <div class="line line-horizontal line-horizontal-1"></div>
+            <div class="line line-horizontal line-horizontal-2"></div>
+            <div class="circle circle-1 knob"></div>
+            <div class="circle circle-2 knob"></div>
+        </div>
+        <!-- T -->
+        <div class="letter-container t" id="letter-t">
+            <div class="line line-horizontal line-horizontal-1"></div>
+            <div class="line line-horizontal line-horizontal-2"></div>
+            <div class="line line-vertical-1"></div>
+            <div class="circle circle-1 knob"></div>
+            <div class="circle circle-2 knob"></div>
+        </div>
+        <!-- U -->
+        <div class="letter-container u" id="letter-u">
+            <div class="line line-vertical-1"></div>
+            <div class="line line-vertical-2"></div>
+            <img src="image/sector-ll.svg" class="ring ll" id="u-ring-ll">
+            <div class="circle circle-1 knob"></div>
+            <div class="circle circle-2 knob"></div>
+            <div class="line line-horizontal line-horizontal-1"></div>
+            <img src="image/sector-lr.svg" class="ring lr" id="u-ring-lr">
+        </div>
+        <!-- V -->
+        <div class="letter-container v" id="letter-v">
+            <div class="line line-vertical-1"></div>
+            <div class="line line-vertical-2"></div>
+            <div class="circle circle-1 knob"></div>
+            <div class="circle circle-2 knob"></div>
+            <img src="image/sector-ur.svg" class="ring ur" id="v-ring-ur">
+            <img src="image/sector-ll.svg" class="ring ll" id="v-ring-ll">
+            <img src="image/sector-lr.svg" class="ring lr" id="v-ring-lr">
+            <img src="image/sector-ul.svg" class="ring ul" id="v-ring-ul">
+        </div>
+        <!-- W -->
+        <div class="letter-container w" id="letter-w">
+            <div class="line line-vertical-1"></div>
+            <div class="circle circle-1 knob"></div>
+            <div class="line line-vertical-2"></div>
+            <div class="circle circle-2 knob"></div>
+            <img src="image/sector-ur.svg" class="ring ur" id="w-ring-ur">
+            <img src="image/sector-ll.svg" class="ring ll" id="w-ring-ll">
+            <img src="image/sector-lr.svg" class="ring lr" id="w-ring-lr">
+            <img src="image/sector-ul.svg" class="ring ul" id="w-ring-ul">
+        </div>
+        <!-- X -->
+        <div class="letter-container x" id="letter-x">
+            <img src="image/sector-ur.svg" class="ring ur" id="x-ring-ur-1">
+            <img src="image/sector-ll.svg" class="ring ll" id="x-ring-ll-1">
+            <img src="image/sector-lr.svg" class="ring lr" id="x-ring-lr-1">
+            <img src="image/sector-ul.svg" class="ring ul" id="x-ring-ul-1">
+            <div class="circle circle-1 knob"></div>
+            <div class="circle circle-2 knob"></div>
+            <img src="image/sector-lr.svg" class="ring lr" id="x-ring-lr-2">
+            <img src="image/sector-ur.svg" class="ring ur" id="x-ring-ur-2">
+            <img src="image/sector-ll.svg" class="ring ll" id="x-ring-ll-2">
+            <img src="image/sector-lr.svg" class="ring lr" id="x-ring-lr-2">
+            <img src="image/sector-ul.svg" class="ring ul" id="x-ring-ul-2">
+        </div>
+        <!-- Y -->
+        <div class="letter-container y" id="letter-y">
+            <div class="circle circle-1 knob"></div>
+            <div class="circle circle-2 knob"></div>
+            <img src="image/sector-ur.svg" class="ring ur" id="y-ring-ur">
+            <img src="image/sector-ll.svg" class="ring ll" id="y-ring-ll">
+            <img src="image/sector-lr.svg" class="ring lr" id="y-ring-lr">
+            <img src="image/sector-ul.svg" class="ring ul" id="y-ring-ul">
+            <div class="line line-vertical-1"></div>
+        </div>
+        <!-- Z -->
+        <div class="letter-container z" id="letter-z">
+            <div class="line line-horizontal line-horizontal-1"></div>
+            <div class="circle circle-1 knob"></div>
+            <div class="line line-horizontal line-horizontal-2"></div>
+            <div class="circle circle-2 knob"></div>
+            <img src="image/sector-lr.svg" class="ring lr" id="z-ring-lr-1">
+            <img src="image/sector-ul.svg" class="ring ul" id="z-ring-ul-1">
+            <img src="image/sector-lr.svg" class="ring lr" id="z-ring-lr-2">
+            <img src="image/sector-ul.svg" class="ring ul" id="z-ring-ul-2">
+        </div>
+</body>
+
+</html>
